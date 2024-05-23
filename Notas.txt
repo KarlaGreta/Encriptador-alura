@@ -1,0 +1,15 @@
+
+Importar Libreria de Gson
+1. Descargar .jar de https://central.sonatype.com/artifact/com.google.code.gson/gson?smo=true
+2.File<- proyectStructure <- Modules <- Dependencies <- + <- buscar la descarga.jar
+
+Realizar el httpCliente y HttpRequest
+HttpCliente = es una libreria que facilita la conexion y la obtencion de respuetas eficiente (peticiones Rest) esta desde java 9
+HttpRequest = contiene info de la request
+
+HttpClient client= HttpClient.newHttpClient();
+HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(""))
+                .build();
+
+Handler ("Manejador ") = algo capaz de recibir un evento , mensaje y actual en fncion del mismo
